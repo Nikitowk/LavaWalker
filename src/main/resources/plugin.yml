@@ -1,0 +1,4 @@
+name: LavaWalker
+version: '${project.version}'
+main: kiernan.lavawalker.LavaWalker
+api-version: 1.19
