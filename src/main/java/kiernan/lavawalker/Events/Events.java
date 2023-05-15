@@ -17,9 +17,9 @@ public class Events implements Listener {
     @EventHandler
     public void onStep(PlayerMoveEvent event){
         Player player = event.getPlayer();
-        Block playerLoc = player.getWorld().getBlockAt(player.getLocation().add(0,-1,0));
-        if(playerLoc.getType() == Material.LAVA){
-            player.sendMessage("Standing on Lava!");
+        Block block = player.getWorld().getBlockAt(player.getLocation().add(0,-1,0));
+        if(block.getType() == Material.LAVA){
+            block.setType(Material.COBBLESTONE);
         }
     }
 }
